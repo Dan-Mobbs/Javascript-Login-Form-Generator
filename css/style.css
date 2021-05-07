@@ -1,0 +1,110 @@
+/*CSS Variables*/
+:root {
+  --textLight: #fff;
+  --textDark: #444;
+  --textGrey: #ddd;
+
+  --borderNone: none;
+  --borderNoraml: 1px solid #444;
+
+  --textSm: 1rem;
+  --textMd: 2rem;
+  --textLg: 3rem;
+}
+
+/*Globel*/
+html,
+body {
+  font-size: 10px;
+}
+body {
+  background-color: #ddd;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  font-family: "Oswald", sans-serif;
+}
+h1,
+h2,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+/*Container*/
+.container {
+  padding: 0 15px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+/*Col*/
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+}
+.col {
+  padding: 0 5rem;
+  height: 400px;
+  margin: 0 2rem;
+}
+
+/*Title*/
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  margin: 50px 0;
+}
+.sub-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.prop-title {
+  font: 1.5rem;
+  margin-bottom: 5px;
+}
+
+/*Form*/
+#form-prev {
+  border-top: none;
+  border-left: 2px solid #444;
+  padding-top: 0;
+}
+.prop-select {
+  border: none;
+  width: 268px;
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  height: 34px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+/* @media screen (max-width: 1200px) {
+} */
+@media (max-width: 840px) {
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #form-prev {
+    border-top: 2px solid #444;
+    border-left: none;
+    padding-left: 0;
+    padding-top: 50px;
+  }
+}
+/* @media screen (max-width: 520px) {
+} */

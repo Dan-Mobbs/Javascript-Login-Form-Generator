@@ -1,0 +1,92 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Stylesheets Main-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--Stylesheets Preview Form-->
+    <link rel="stylesheet" href="css/form.css" />
+  </head>
+  <body>
+    <div class="title">
+      <h1>Javascipt Login Generator</h1>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="container">
+          <!--Property selector for login preivew-->
+          <h2 class="sub-title">Form Properties</h2>
+          <form>
+            <!--Border Color-->
+            <h2 class="prop-title">Border Color:</h2>
+            <select class="prop-select" name="form-props" id="form-props">
+              <option selected>- Select Border Color -</option>
+              <option value="green">Border Green</option>
+              <option value="red">Border Red</option>
+              <option value="orange">Border Orange</option>
+              <option value="pink">Border Pink</option>
+            </select>
+
+            <!--Text Color-->
+            <h2 class="prop-title">Text Color</h2>
+            <select class="prop-select" name="form-props" id="form-props">
+              <option>- Select Text Color -</option>
+              <option value="green">Text Green</option>
+              <option value="red">Text Red</option>
+              <option value="orange">Text Orange</option>
+              <option value="pink">Text Pink</option>
+            </select>
+
+            <!--Button color change-->
+            <h2 class="prop-title">Button Color:</h2>
+            <select class="prop-select" name="form-props" id="form-props">
+              <option>- Select Button Color -</option>
+              <option value="green">Button Green</option>
+              <option value="red">Button Red</option>
+              <option value="orange">Button Orange</option>
+              <option value="pink">Button Pink</option>
+            </select>
+
+            <!--Font Size change-->
+            <h2 class="prop-title">Font Size:</h2>
+            <select class="prop-select" name="form-props" id="form-props">
+              <option>- Select Font Size -</option>
+              <option value="green">Font Size Small</option>
+              <option value="red">Font Size Medium</option>
+              <option value="orange">Font Size Large</option>
+            </select>
+          </form>
+        </div>
+      </div>
+
+      <div id="form-prev" class="col">
+        <div class="container">
+          <h2 class="sub-title">Form Preview</h2>
+          <form>
+            <label for="name">Name</label>
+            <input id="name" type="text" />
+            <label for="email">Email</label>
+            <input id="email" type="text" />
+            <label for="message">Message</label>
+            <textarea name="" id="message" cols="30" rows="10"></textarea>
+            <button id="submit-btn" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
